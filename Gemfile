@@ -31,6 +31,8 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use Capistrano for deployment
+gem 'bootstrap-sass'
+gem 'simple_form'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
@@ -39,6 +41,9 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem 'rails_layout'
+  gem 'better_errors'
+  gem "binding_of_caller"
 end
 
 group :development do
@@ -52,3 +57,6 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+
+gem 'impressionist'
